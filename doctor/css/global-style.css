@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --mainColor : #113B49;
+    --secondColor : #3E7E92;
+    --bgColor : #E1EBEE; 
+    --mainFont : 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: var(--mainFont) !important;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    position: relative ;
+    height: 100vh;
+    padding: 0px !important;
+    max-width: 170px !important;
+}
+
+aside .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background: url('../images/logo regala (Y).png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+aside .menu {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+}
+aside .menu .item {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 15px 5px 15px 10px;
+    border-radius: 7px 0px 0px 7px;
+    font-weight: bold;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+aside .menu .item:last-child {
+    position: absolute;
+    top: 450px;
+    left: 0;
+}
+aside .menu .item a {
+    text-decoration: none;
+    color: var(--secondColor);
+}
+aside .menu .item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+aside .menu .item.active {
+    background-color: white;
+    color: var(--mainColor);
+}
+
+
+
+.container-content {
+    background-color: white;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 50px 70px;
+    margin : 80px 0px;
+    min-height: 100vh;
+    /* margin-inline: 170px !important; */
+}
+
+.container-content .title {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.container-content .row {
+    row-gap: 30px;
+    -moz-row-gap: 30px ;
+    -o-row-gap: 30px;
+    -webkit-row-gap: 30px;
+    -ms-row-gap: 30px;
+    /* gap: 20px; */
+    
+}
+
+
+.container-content .row .card-item {
+    background-color: var(--bgColor);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #DDD;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.container-content .row .card-item:hover {
+    border: 2px solid var(--secondColor);
+}
+
+
+
+@media screen and (max-width:757px){
+    aside {
+        width: 50px !important;
+    }
+
+    aside .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    aside .menu .item a span{
+       display: none;
+    }
+    
+}
