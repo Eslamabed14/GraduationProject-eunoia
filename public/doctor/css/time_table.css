@@ -1,0 +1,59 @@
+
+
+
+@import url('home.css');
+
+aside .menu {
+    top: 60%;
+}
+
+
+
+.time_table_wrapper {
+    width: 100%;
+    border-left: 2px solid var(--secondColor);
+    padding: 40px 0px 0px 15px;
+    margin-left: 5px;
+}
+
+.time_table_wrapper .table_item {
+    margin-bottom: 40px;
+}
+
+.table_item .table_date {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+.table_item .table_content {
+    width: 60%;
+    margin-left: 40px;
+}
+
+.table_item .table_content .patient {
+    background-color: var(--bgColor);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.patient .patient_name {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--mainColor);
+}
+
+.patient .patient_date {
+    font-size: 15px;
+    color: var(--secondColor);
+}
+
+
+@media screen and (max-width:757px) {
+    .table_item .table_content {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
